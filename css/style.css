@@ -1,0 +1,149 @@
+body {
+  font-family: "Libertinus Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+.botoes-topo {
+    display: flex;   
+    gap: 15px;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+header, footer {
+  padding: 10px;
+  background-color: #8c00ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 10px;
+}
+
+.fotomembrocontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.fotomembro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.large-font {
+  font-size: 2em;
+}
+
+.slider{
+	margin: 0 auto;
+	width: 800px;
+	height: 1200px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slides{
+	width: 800%;
+	height: 1200px;
+	display: flex;
+	transition: margin-left 2s ease;
+}
+
+.slide{
+	width: 25%;
+	position: relative;
+}
+
+.slider input{
+	display: none;
+}
+
+.slide img{
+	width: 800px;
+}
+
+.manual-navigation{
+	position: absolute;
+	width: 800px;
+	bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #00ff00;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s
+}
+
+.manual-btn{
+	margin-right: 40px;
+}
+
+.manual-btn:hover{
+	background-color: #f700ff;
+}
+
+#radio1:checked ~ .slides {
+  margin-left: 0;
+}
+#radio2:checked ~ .slides {
+  margin-left: -800px;
+}
+#radio3:checked ~ .slides {
+  margin-left: -1600px;
+}
+#radio4:checked ~ .slides {
+  margin-left: -2400px;
+}
+#radio5:checked ~ .slides {
+  margin-left: -3200px;
+}
+#radio6:checked ~ .slides {
+  margin-left: -4000px;
+}
+#radio7:checked ~ .slides {
+  margin-left: -4800px;
+}
+#radio8:checked ~ .slides {
+  margin-left: -5600px;
+}
+#radio9:checked ~ .slides {
+  margin-left: -6400px;
+}
+#radio10:checked ~ .slides {
+  margin-left: -7200px;
+}
+#radio11:checked ~ .slides {
+  margin-left: -8000px;
+}
